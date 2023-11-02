@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>평범한학생이었던내가이세계에서는햄국후계자?!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* 원하는 폰트로 수정하세요 */
+        }
+        
+        /* 이미지 스타일을 추가합니다. */
+        .image-gallery img {        display: block;
+        margin: 10px auto;
+        width: 100%; /* 이미지를 화면 폭에 맞게 조절 */
+        max-width: 900px; /* 최대 폭을 900px로 제한 */
+        height: auto;
+        }
+
+        
+        /* hero 부분에 여백을 추가합니다. */
+        .hero {
+            padding: 100px 0; /* 상하 여백을 줄임 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+
+        /* 텍스트 스타일 추가 */
+        .hero-text {
+            color: lightblue;
+            margin: 0px 0; /* 상하 여백을 줄임 */
+        }
+
+        /* 암호 입력 부분 스타일 추가 */
+        .password-input {
+            text-align: center;
+            margin: 0px 0; /* 상하 여백을 줄임 */
+        }
+
+        /* 하단 부분에도 여백을 추가합니다. */
+        .footer {
+            padding: 50px 0; /* 상하 여백을 추가 */
+            color: lightblue;
+            text-align: center;
+        }
+            /* 모바일 환경에 대한 스타일 */
+    @media (max-width: 768px) {
+        .image-gallery img {
+            max-width: 100%; /* 모바일 환경에서 이미지를 화면 폭에 맞게 조절 */
+        }
+    }
+</style>
+
+
+    </style>
+</head>
+<body>
+    <!-- hero 부분에 여백을 주기 위해 클래스 추가 -->
+    <div class="hero">
+        <!-- 이미지 부분 -->
+        <div class="image-gallery">
+            <img src="코믹1.png" alt="1" />
+            <img src="코믹2.png" alt="2" />
+            <img src="코믹3.png" alt="3" />
+            <img src="코믹4.png" alt="4" />
+            <img src="코믹5.png" alt="5" />
+            <img src="comic 6.png" alt="6" />
+        </div>
+        <!-- 텍스트를 추가 -->
+        <div class="hero-text">
+            <br><br><br><br><br>PC로 접속하여 지금 바로 햄국으로 떠나 보세요!
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-4">
+                <h2 class="text-center"></h2>
+                <div class="input-group password-input">
+                    <input type="password" class="form-control" id="password" placeholder="햄국 여행권을 사용하시겠습니까?">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" onclick="checkPassword()">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-4">
+                <h2 class="text-center"></h2>
+                <div class="input-group password-input">
+                    <input type="password" class="form-control" id="password2" placeholder="여행을 마치셨다면? 기념품 수령하기">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" onclick="checkPassword2()">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 하단 부분에 여백을 주기 위해 클래스 추가 -->
+    <div class="footer">
+        
+    </div>
+
+    <script>
+        function checkPassword() {
+            var inputPassword = document.getElementById("password").value;
+            var correctPassword = "01040106";
+
+            if (inputPassword === correctPassword) {
+                // 암호가 올바를 경우 다음 페이지로 리다이렉
+
+                window.location.href = "https://bbbbubl.github.io/PLAY/";
+            } else {
+                alert("비밀번호는 유진이 생일 + 형 생일 여덟 자리 ㅎㅎ");
+            }
+    
+        }
+
+        function checkPassword2() {
+        var inputPassword = document.getElementById("password2").value;
+        var correctPassword2 = "143awww"; // Replace with your new password
+
+        if (inputPassword === correctPassword2) {
+            // Redirect to a different page for the new password
+            window.location.href = "https://bbbbubl.github.io/epilogue/"; // Replace with your new destination URL
+        } else {
+            alert("햄국에서 발행된 선물 코드가 아닌 것 같아요 T.T");
+        }
+    }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>터치 조이스틱</title>
+    <link rel="stylesheet" type="text/css" href="joystick.css">
+</head>
+<body>
+    <div id="joystick">
+        <button id="up-button">Up</button>
+        <button id="down-button">Down</button>
+        <button id="left-button">Left</button>
+        <button id="right-button">Right</button>
+        <button id="space-button">Space</button>
+    </div>
+    <script src="joystick.js"></script>
+</body>
+</html>
